@@ -8,7 +8,6 @@ function getInnerTextIntoNum(id) {
 
 
 // function for find class list as a loop and get an Array
-
 function findingAllClasses(cls) {
   let className = document.querySelectorAll(cls);
   let texts = [];
@@ -18,6 +17,8 @@ function findingAllClasses(cls) {
   }
   return texts;
 }
+
+// love icon functionality
 
 let loveIcon = document.querySelectorAll(".loveicon");
 for (let icon of loveIcon) {
@@ -33,22 +34,41 @@ for (let icon of loveIcon) {
 // Service name
 // Service number
 
-let history = {
-    service:"ফায়ার সার্ভিস",
-    date : new Date().toLocaleTimeString()
-}
 
 
+
+
+
+// 5. Call History Section
+// Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
+// A Clear History button on the right
+// Clicking this button will remove all data from call history
+
+
+// copy btn functionality
+let copyBtns = document.querySelectorAll(".copy_btn");
+let numbers = findingAllClasses(".service_num");
+copyBtns.forEach((btn, index) => {
+    btn.addEventListener("click", function () {
+        let copyBox = getInnerTextIntoNum("copy_box");
+        let newText = copyBox + 1 + " " + "copy";
+        document.getElementById("copy_box").children[0].innerText = newText;
+        let copyNum = number[index];
+        navigator.clipboard.writeText(copyNum);
+        alert("Hotline number copied successfully");
+    });
+});
+
+// call btn functionality
 let callBtn = document.querySelectorAll(".call_btn");
 let serviceName = findingAllClasses(".service_name");
 let number = findingAllClasses(".service_num");
-
 callBtn.forEach((btn, index) => {
-  btn.addEventListener("click", function () {
-    let textNum = getInnerTextIntoNum("coin_box");
-    if (textNum <= 0) {
-      alert(" Sorry! Out of coin");
-      return;
+    btn.addEventListener("click", function () {
+        let textNum = getInnerTextIntoNum("coin_box");
+        if (textNum <= 0) {
+            alert(" Sorry! Out of coin");
+            return;
     }
     let name = serviceName[index];
     let num = number[index];
@@ -57,26 +77,27 @@ callBtn.forEach((btn, index) => {
     if (newValue < 0) newValue = 0;
     document.getElementById("coin_box").children[0].innerText = newValue;
 
-
+   let create = document.getElementById('aside_bar').addEventListener('click',function(){
+    alert('aside clicked')
+   })
        
   });
 });
 
+let history = {
+    service:"ফায়ার সার্ভিস",
+    date : new Date().toLocaleTimeString()
+}
+console.log(history)
 
-// 5. Call History Section
-// Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-// A Clear History button on the right
-// Clicking this button will remove all data from call history
 
-let copyBtns = document.querySelectorAll(".copy_btn");
-let numbers = findingAllClasses(".service_num");
-copyBtns.forEach((btn, index) => {
-  btn.addEventListener("click", function () {
-    let copyBox = getInnerTextIntoNum("copy_box");
-    let newText = copyBox + 1 + " " + "copy";
-    document.getElementById("copy_box").children[0].innerText = newText;
-    let copyNum = number[index];
-    navigator.clipboard.writeText(copyNum);
-    alert("Hotline number copied successfully");
-  });
-});
+
+//  <div class="history_info w-[98%] mb-4 flex justify-between">
+//             <div>
+//               <h1 class="text-sm">জাতীয় জরুরি সেবা</h1>
+//               <p class="text-sm">999</p>
+//             </div>
+//             <div class="time">
+//               <p class="text-sm"></p>
+//             </div>
+//           </div>
