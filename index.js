@@ -77,9 +77,20 @@ callBtn.forEach((btn, index) => {
     if (newValue < 0) newValue = 0;
     document.getElementById("coin_box").children[0].innerText = newValue;
 
-   let create = document.getElementById('aside_bar').addEventListener('click',function(){
-    alert('aside clicked')
-   })
+    let date = new Date().toLocaleTimeString()
+    console.log(name,num,date)
+    
+    let historyList = document.getElementById('history_list')
+    let newChild = document.createElement('div')
+    newChild.innerHTML = `<div class = "flex shadow-sm  p-3 ">
+     <div class=" w-[60%]">
+              <h1 class="text-sm mb-1">${name}</h1>
+              <p class="text-sm">${num}</p>
+            </div>
+            <div class="time w-[40%]  ">
+              <p class="text-sm">${date}</p>
+            </div></div>`
+    historyList.appendChild(newChild)
        
   });
 });
@@ -92,12 +103,3 @@ console.log(history)
 
 
 
-//  <div class="history_info w-[98%] mb-4 flex justify-between">
-//             <div>
-//               <h1 class="text-sm">জাতীয় জরুরি সেবা</h1>
-//               <p class="text-sm">999</p>
-//             </div>
-//             <div class="time">
-//               <p class="text-sm"></p>
-//             </div>
-//           </div>
