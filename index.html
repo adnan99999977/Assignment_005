@@ -8,12 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- favicon link  -->
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- font link -->
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;999&display=swap" rel="stylesheet">
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-    </style>
   </head>
-  <body>
+  <body class="font-inter">
     <!-- navber -->
     <nav
       class="flex w-11/12 m-auto font-['Inter'] mt-6 xl:flex justify-between b"
@@ -21,7 +20,7 @@
       <div class="md:flex xl:flex items-center gap-2 cursor-pointer">
         <img class="w-12 h-12" src="./assets/logo.png" alt="" />
         <p
-          class="hidden md:block lg:block xl:block w-30 font-[900] text-lg text-[rgba(0,103,71,1)] leading-5"
+          class="hidden md:block lg:block xl:block w-30 font-[999] text-lg text-[rgba(0,103,71,1)] leading-5"
         >
           Emergency Service
         </p>
@@ -54,7 +53,7 @@
     >
       <img class="w-[95px] m-auto mb-4" src="./assets/logo-dark.png" alt="" />
       <div class="text-center space-y-3">
-        <h1 class="font-bold font-['inter'] text-3xl">জরুরি সেবা ডিরেক্টরি</h1>
+        <h1 class="font-extrabold  text-3xl">জরুরি সেবা ডিরেক্টরি</h1>
         <p class="font-semibold">
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
@@ -63,7 +62,7 @@
     </section>
 
     <!-- main section -->
-    <main class="bg-[#dbeff77c] font-['Inter'] ">
+    <main class="bg-[#dbeff77c]  ">
       <section 
         class="w-90 m-auto flex flex-col pt-5 sm:w-11/12  xl:grid grid-cols-12 gap-10 "
       >
@@ -72,7 +71,8 @@
             class="cards mb-10 m-auto  flex flex-col  sm:grid md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-3 gap-5 "
           >
             <div
-              class="w-84 m-0 card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
+              class="w-84 hover:transform transition 
+            hover:-translate-y-2 hover:shadow-xl cursor-pointer m-0 card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
             >
               <div class="image flex justify-between items-center">
                 <img
@@ -85,32 +85,33 @@
               </div>
               <div class="info mt-3 space-y-2">
                 <h1 class="font-[900] font-hind">জাতীয় জরুরি সেবা</h1>
-                <p class="text-sm">National Emergency</p>
+                <p class="text-sm text-gray-400 ">National Emergency</p>
                 <h2 class="font-extrabold font-['Inter']">999</h2>
                 <div
-                  class="w-24 h-9 bg-gray-300 flex justify-center items-center rounded-3xl hover:bg-gray-400 duration-200"
+                  class="w-24 h-9 bg-gray-200 flex justify-center items-center rounded-3xl hover:bg-gray-300  duration-200 cursor-pointer"
                 >
-                  <p class="text-sm">সার্বজনীন</p>
+                  <p class="text-sm text-gray-500 ">সার্বজনীন</p>
                 </div>
               </div>
-              <div class="btn flex justify-between mt-4 gap-3 cursor-pointer">
+              <div class="btn flex justify-between mt-4 gap-3 ">
                 <button
-                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-500"
+                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-500 cursor-pointer"
                 >
                   <img class="" src="./assets/icons8-copy-16.png" alt="" />
                   Copy
                 </button>
 
                 <button
-                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200"
+                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200 cursor-pointer"
                 >
-                  <img class="" src="./assets/icons8-call-16 (1).png" alt="" />
+                  <img class="" src="./assets/call icon.png" alt="" />
                   Call
                 </button>
               </div>
             </div>
             <div
-              class="w-84 card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
+              class="w-84 card hover:transform transition 
+            hover:-translate-y-2 hover:shadow-xl cursor-pointer shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
             >
               <div class="image flex justify-between items-center">
                 <img
@@ -123,32 +124,33 @@
               </div>
               <div class="info mt-3 space-y-2">
                 <h1 class="font-[900] font-hind">পুলিশ</h1>
-                <p class="text-sm">Police</p>
+                <p class="text-sm text-gray-500">Police</p>
                 <h2 class="font-extrabold font-['Inter']">999</h2>
                 <div
-                  class="w-24 h-9 bg-gray-300 flex justify-center items-center rounded-3xl hover:bg-gray-400 duration-200"
+                  class="w-24 h-9 bg-gray-200 flex justify-center items-center rounded-3xl hover:bg-gray-300 duration-200 cursor-pointer"
                 >
-                  <p class="text-sm">পুলিশ</p>
+                  <p class="text-sm text-gray-500 ">পুলিশ</p>
                 </div>
               </div>
-              <div class="btn flex justify-between mt-4 gap-3 cursor-pointer">
+              <div class="btn flex justify-between mt-4 gap-3 ">
                 <button
-                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-500"
+                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-400 cursor-pointer "
                 >
                   <img class="" src="./assets/icons8-copy-16.png" alt="" />
                   Copy
                 </button>
 
                 <button
-                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200"
+                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200 cursor-pointer"
                 >
-                  <img class="" src="./assets/icons8-call-16 (1).png" alt="" />
+                  <img class="" src="./assets/call icon.png" alt="" />
                   Call
                 </button>
               </div>
             </div>
             <div
-              class="w-84 card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
+              class="w-84 card hover:transform transition 
+            hover:-translate-y-2 hover:shadow-xl cursor-pointer shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
             >
               <div class="image flex justify-between items-center">
                 <img
@@ -161,32 +163,33 @@
               </div>
               <div class="info mt-3 space-y-2">
                 <h1 class="font-[900] font-hind">ফায়ার সার্ভিস</h1>
-                <p class="text-sm">Fire Service</p>
+                <p class="text-sm text-gray-500">Fire Service</p>
                 <h2 class="font-extrabold font-['Inter']">999</h2>
                 <div
-                  class="w-24 h-9 bg-gray-300 flex justify-center items-center rounded-3xl hover:bg-gray-400 duration-200"
+                  class="w-24 h-9 bg-gray-200 flex justify-center items-center rounded-3xl hover:bg-gray-300 duration-200 cursor-pointer"
                 >
-                  <p class="text-sm">ফায়ার সার্ভিস</p>
+                  <p class="text-sm text-gray-500">ফায়ার সার্ভিস</p>
                 </div>
               </div>
               <div class="btn flex justify-between mt-4 gap-3 cursor-pointer">
                 <button
-                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-500"
+                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-400 cursor-pointer"
                 >
                   <img class="" src="./assets/icons8-copy-16.png" alt="" />
                   Copy
                 </button>
 
                 <button
-                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200"
+                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200 cursor-pointer"
                 >
-                  <img class="" src="./assets/icons8-call-16 (1).png" alt="" />
+                  <img class="" src="./assets/call icon.png" alt="" />
                   Call
                 </button>
               </div>
             </div>
             <div
-              class="w-84 card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
+              class="w-84 card hover:transform transition 
+            hover:-translate-y-2 hover:shadow-xl cursor-pointer shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
             >
               <div class="image flex justify-between items-center">
                 <img
@@ -199,32 +202,33 @@
               </div>
               <div class="info mt-3 space-y-2">
                 <h1 class="font-[900] font-hind">অ্যাম্বুলেন্স</h1>
-                <p class="text-sm">Ambulance</p>
+                <p class="text-sm text-gray-500">Ambulance</p>
                 <h2 class="font-extrabold font-['Inter']">1994-999999</h2>
                 <div
-                  class="w-24 h-9 bg-gray-300 flex justify-center items-center rounded-3xl hover:bg-gray-400 duration-200"
+                  class="w-24 h-9 bg-gray-200 flex justify-center items-center rounded-3xl hover:bg-gray-300 duration-200 cursor-pointer"
                 >
-                  <p class="text-sm">স্বাস্থ্য</p>
+                  <p class="text-sm text-gray-500">স্বাস্থ্য</p>
                 </div>
               </div>
               <div class="btn flex justify-between mt-4 gap-3 cursor-pointer">
                 <button
-                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-500"
+                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-400 cursor-pointer"
                 >
                   <img class="" src="./assets/icons8-copy-16.png" alt="" />
                   Copy
                 </button>
 
                 <button
-                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200"
+                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200 cursor-pointer"
                 >
-                  <img class="" src="./assets/icons8-call-16 (1).png" alt="" />
+                  <img class="" src="./assets/call icon.png" alt="" />
                   Call
                 </button>
               </div>
             </div>
             <div
-              class="w-84 card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
+              class="w-84 hover:transform transition 
+            hover:-translate-y-2 hover:shadow-xl cursor-pointer card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
             >
               <div class="image flex justify-between items-center">
                 <img
@@ -237,32 +241,33 @@
               </div>
               <div class="info mt-3 space-y-2">
                 <h1 class="font-[900] font-hind">নারী ও শিশু সহায়তা</h1>
-                <p class="text-sm">Women & Child Helpline</p>
+                <p class="text-sm text-gray-500">Women & Child Helpline</p>
                 <h2 class="font-extrabold font-['Inter']">109</h2>
                 <div
-                  class="w-24 h-9 bg-gray-300 flex justify-center items-center rounded-3xl hover:bg-gray-400 duration-200"
+                  class="w-24 h-9 bg-gray-200 flex justify-center items-center rounded-3xl hover:bg-gray-300 duration-200 cursor-pointer"
                 >
-                  <p class="text-sm">সহায়তা</p>
+                  <p class="text-sm text-gray-500">সহায়তা</p>
                 </div>
               </div>
               <div class="btn flex justify-between mt-4 gap-3 cursor-pointer">
                 <button
-                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-500"
+                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-400 cursor-pointer"
                 >
                   <img class="" src="./assets/icons8-copy-16.png" alt="" />
                   Copy
                 </button>
 
                 <button
-                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200"
+                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200 cursor-pointer"
                 >
-                  <img class="" src="./assets/icons8-call-16 (1).png" alt="" />
+                  <img class="" src="./assets/call icon.png" alt="" />
                   Call
                 </button>
               </div>
             </div>
             <div
-              class="w-84 card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
+              class="w-84 hover:transform transition 
+            hover:-translate-y-2 hover:shadow-xl cursor-pointer card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
             >
               <div class="image flex justify-between items-center">
                 <img
@@ -275,32 +280,33 @@
               </div>
               <div class="info mt-3 space-y-2">
                 <h1 class="font-[900] font-hind">দুদক</h1>
-                <p class="text-sm">Anti-Corruption</p>
+                <p class="text-sm text-gray-500">Anti-Corruption</p>
                 <h2 class="font-extrabold font-['Inter']">106</h2>
                 <div
-                  class="w-24 h-9 bg-gray-300 flex justify-center items-center rounded-3xl hover:bg-gray-400 duration-200"
+                  class="w-24 h-9 bg-gray-200 flex justify-center items-center rounded-3xl hover:bg-gray-300 duration-200 cursor-pointer"
                 >
-                  <p class="text-sm">সরকারি</p>
+                  <p class="text-sm text-gray-500">সরকারি</p>
                 </div>
               </div>
               <div class="btn flex justify-between mt-4 gap-3 cursor-pointer">
                 <button
-                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-500"
+                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-400 cursor-pointer"
                 >
                   <img class="" src="./assets/icons8-copy-16.png" alt="" />
                   Copy
                 </button>
 
                 <button
-                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200"
+                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200 cursor-pointer"
                 >
-                  <img class="" src="./assets/icons8-call-16 (1).png" alt="" />
+                  <img class="" src="./assets/call icon.png" alt="" />
                   Call
                 </button>
               </div>
             </div>
             <div
-              class="w-84 card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
+              class="w-84 hover:transform transition 
+            hover:-translate-y-2 hover:shadow-xl cursor-pointer card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
             >
               <div class="image flex justify-between items-center">
                 <img
@@ -313,33 +319,34 @@
               </div>
               <div class="info mt-3 space-y-2">
                 <h1 class="font-[900] font-hind">বিদ্যুৎ বিভ্রাট</h1>
-                <p class="text-sm">Electricity Outage</p>
+                <p class="text-sm text-gray-500">Electricity Outage</p>
                 <h2 class="font-extrabold font-['Inter']">16216</h2>
                 <div
-                  class="w-24 h-9 bg-gray-300 flex justify-center items-center rounded-3xl hover:bg-gray-400 duration-200"
+                  class="w-24 h-9 bg-gray-200 flex justify-center items-center rounded-3xl hover:bg-gray-300 duration-200 cursor-pointer"
                 >
-                  <p class="text-sm">বিদ্যুৎ</p>
+                  <p class="text-sm text-gray-500">বিদ্যুৎ</p>
                 </div>
               </div>
               <div class="btn flex justify-between mt-4 gap-3 cursor-pointer">
                 <button
-                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-500"
+                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-400 cursor-pointer"
                 >
                   <img class="" src="./assets/icons8-copy-16.png" alt="" />
                   Copy
                 </button>
 
                 <button
-                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200"
+                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200 cursor-pointer"
                 >
-                  <img class="" src="./assets/icons8-call-16 (1).png" alt="" />
+                  <img class="" src="./assets/call icon.png" alt="" />
                   Call
                 </button>
               </div>
             </div>
             <div
-              class="w-84 card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
-            >
+              class="w-84 hover:transform transition 
+            hover:-translate-y-2 hover:shadow-xl cursor-pointer card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
+            > 
               <div class="image flex justify-between items-center">
                 <img
                   class="bg-[rgba(255,227,226,1)] rounded-lg p-2 w-11"
@@ -351,32 +358,33 @@
               </div>
               <div class="info mt-3 space-y-2">
                 <h1 class="font-[900] font-hind">ব্র্যাক</h1>
-                <p class="text-sm">Brac</p>
+                <p class="text-sm text-gray-500">Brac</p>
                 <h2 class="font-extrabold font-['Inter']">16445</h2>
                 <div
-                  class="w-24 h-9 bg-gray-300 flex justify-center items-center rounded-3xl hover:bg-gray-400 duration-200"
+                  class="w-24 h-9 bg-gray-200 flex justify-center items-center rounded-3xl hover:bg-gray-300 duration-200 cursor-pointer"
                 >
-                  <p class="text-sm">এনজিও</p>
+                  <p class="text-sm ">এনজিও</p>
                 </div>
               </div>
               <div class="btn flex justify-between mt-4 gap-3 cursor-pointer">
                 <button
-                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-500"
+                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-400 cursor-pointer"
                 >
                   <img class="" src="./assets/icons8-copy-16.png" alt="" />
                   Copy
                 </button>
 
                 <button
-                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200"
+                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200 cursor-pointer"
                 >
-                  <img class="" src="./assets/icons8-call-16 (1).png" alt="" />
+                  <img class="" src="./assets/call icon.png" alt="" />
                   Call
                 </button>
               </div>
             </div>
             <div
-              class="w-84 card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
+              class="w-84 hover:transform transition 
+            hover:-translate-y-2 hover:shadow-xl cursor-pointer card shadow-md xl:w-74 bg-white rounded-lg h-70 p-5"
             >
               <div class="image flex justify-between items-center">
                 <img
@@ -389,38 +397,39 @@
               </div>
               <div class="info mt-3 space-y-2">
                 <h1 class="font-[900] font-hind">বাংলাদেশ রেলওয়ে</h1>
-                <p class="text-sm">Bangladesh Railway</p>
+                <p class="text-sm text-gray-500">Bangladesh Railway</p>
                 <h2 class="font-extrabold font-['Inter']">163</h2>
                 <div
-                  class="w-24 h-9 bg-gray-300 flex justify-center items-center rounded-3xl hover:bg-gray-400 duration-200"
+                  class="w-24 h-9 bg-gray-200 flex justify-center items-center rounded-3xl hover:bg-gray-300 duration-200 cursor-pointer"
                 >
-                  <p class="text-sm">পরিবহন</p>
+                  <p class="text-sm text-gray-500">পরিবহন</p>
                 </div>
               </div>
               <div class="btn flex justify-between mt-4 gap-3 cursor-pointer">
                 <button
-                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-500"
+                  class="flex items-center gap-1 w-40 h-9 bg-white border border-gray-300 justify-center rounded-lg hover:bg-slate-300 border-1 duration-200 text-gray-400 cursor-pointer"
                 >
                   <img class="" src="./assets/icons8-copy-16.png" alt="" />
                   Copy
                 </button>
 
                 <button
-                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200"
+                  class="flex items-center gap-1 w-40 h-9 border border-gray-300 justify-center rounded-lg text-white bg-[rgba(0,166,62,1)] hover:bg-[#097531] duration-200 cursor-pointer"
                 >
-                  <img class="" src="./assets/icons8-call-16 (1).png" alt="" />
+                  <img class="" src="./assets/call icon.png" alt="" />
                   Call
                 </button>
               </div>
             </div>
-          </div>
+            </div>
         </aside>
 
-        <aside class="right-side bg-white rounded-lg p-6 col-span-3 mb-10">
+        <aside class="right-side bg-white rounded-lg p-6 col-span-3 mb-10 hover:transform transition 
+            hover:-translate-y-2 hover:shadow-xl cursor-pointer">
           <div class="history flex justify-between mb-10">
             <div class="histor flex items-center gap-1">
               <img src="./assets/icons8-clock-16.png" alt="" />
-              <p class="font-bold">Call History</p>
+              <p class="font-bold text-gray-600">Call History</p>
             </div>
             <button
               class="w-24 rounded-3xl h-10 bg-[rgba(0,166,62,1)] text-white flex justify-center items-center hover:bg-[#097932ec] duration-300"
